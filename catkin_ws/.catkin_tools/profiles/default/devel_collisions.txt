@@ -1,0 +1,1 @@
+/home/poo/808x/beginner_tutorials/catkin_ws/devel/./cmake.lock 1
