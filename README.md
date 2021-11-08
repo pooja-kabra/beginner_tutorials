@@ -4,7 +4,8 @@ This project is basic implementation of interfacing of publisher and suscriber n
 -roscpp
 -rospy
 -std_msgs
-
+-message_generations
+-genmsg
 
 To run publisher and suscriber nodes, in catkin_ws:
 
@@ -12,10 +13,11 @@ $ catkin build
 $ source devel/setup.bash
 $ roscore
 
-Open new tab, run:
-$ source devel/setup.bash
-$ rosrun begginer_tutorials publisher
+Open new tab, run (publisher and subscriber at once):
+$ roslaunch beginner_tutorials nodes.launch my_rate:= <your rate here>
 
-Open one more new tab, run:
-$ source devel/setup.bash
-$ rosrun begginer_tutorials suscriber
+Open new tab, run rosservice:
+$ rosservice call /ChangeBaseString "<your text here>"
+
+Open new tab, run:
+$ rqt_console
