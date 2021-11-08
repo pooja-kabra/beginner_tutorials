@@ -1,0 +1,22 @@
+<launch>
+    <arg name="my_rate" default="10" doc="my_rate"/>
+    <arg name="rosBagEnable" default="false" doc="rosBagEnable"/>
+    <param name="my_rate" value="$(arg my_rate)"/>
+    <node pkg="beginner_tutorials"
+          type="publisher"
+          name="talker"
+          output="screen"/>
+
+    <node pkg="beginner_tutorials"
+          type="subscriber"
+          name="listener"
+          output="screen"/>
+
+    <node pkg="rosbag"
+          type="record"
+          name="record"
+          args="-a -O $(find beginner_tutorials)/results/rosbagg"
+          if="$(arg rosBagEnable)"
+          />
+
+</launch>
