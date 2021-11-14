@@ -1,0 +1,6 @@
+<launch>
+    <arg name="my_rate" default="2" doc="my_rate"/>
+    <param name="my_rate" value="$(arg my_rate)"/>
+    <node pkg="beginner_tutorials" name="publisher" type="publisher" />
+    <test pkg="beginner_tutorials" test-name="publisherTest" type="publisherTest" />
+</launch>
