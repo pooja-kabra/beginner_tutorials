@@ -2,8 +2,8 @@
  * @file publisher.cpp
  * @author Pooja Kabra
  * @brief This file publishes the data in string format
- * @version 0.1
- * @date 2021-11-01
+ * @version 0.3
+ * @date 2021-11-14
  *
  * @copyright Copyright (c) 2021
  *
