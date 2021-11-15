@@ -2,4 +2,5 @@ CPPLINT
 Done processing publisher.hpp
 Done processing beginner_tutorials/src/subscriber.cpp 
 Done processing beginner_tutorials/src/publisher.cpp
-
+Done processing beginner_tutorials/test/main.cpp ...
+Done processing beginner_tutorials/test/publisherTest.cpp ...
