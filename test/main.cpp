@@ -8,7 +8,6 @@
  * @copyright Copyright (c) 2021
  *
  */
- 
 #include <ros/ros.h>
 #include <gtest/gtest.h>
 
