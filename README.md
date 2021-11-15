@@ -22,9 +22,6 @@ $ rosservice call /ChangeBaseString "<your text here>"
 # To check logging, open new tab, run:
 $ rqt_console
 
-# to run rosservice
-rosservice call /changeBaseString "<text>"
-
 # to check logging
 $ rqt_console
 
@@ -50,4 +47,4 @@ $ rosbag record -a
 
 
 # to play rosbag: 
-cd /src/beginner_tutorials/results rosbag play rosbagg.bag rosbag info rosbagg.bag
+$ cd /src/beginner_tutorials/results $ rosbag play rosbagg.bag
